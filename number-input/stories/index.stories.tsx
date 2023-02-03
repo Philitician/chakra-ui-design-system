@@ -1,6 +1,6 @@
 import { chakra } from '../src/index';
 import * as React from 'react';
-import Lorem from 'react-lorem-component';
+import { LoremIpsum } from 'react-lorem-ipsum';
 import { Button } from '../src/index';
 import { Input } from '../src/index';
 import { Stack } from '../src/index';
@@ -48,13 +48,13 @@ export const HookUsage = () => {
   return (
     <>
       <div>current: {valueAsNumber}</div>
-      <Lorem />
+      <LoremIpsum />
       <chakra.div display="flex">
         <Button {...getIncrementButtonProps()}>+</Button>
         <Input {...(getInputProps() as any)} />
         <Button {...getDecrementButtonProps()}>-</Button>
       </chakra.div>
-      <Lorem />
+      <LoremIpsum />
     </>
   );
 };
@@ -187,7 +187,7 @@ export const WithReactHookForm = () => {
           console.log('blurred');
         }}
       >
-        <NumberInputField ref={register} />
+        // <NumberInputField ref={register} />
         <NumberInputStepper>
           <NumberIncrementStepper />
           <NumberDecrementStepper />

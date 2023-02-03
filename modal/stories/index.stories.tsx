@@ -1,7 +1,7 @@
 import { useDisclosure } from '../src/index';
 import { chakra } from '../src/index';
 import * as React from 'react';
-import Lorem from 'react-lorem-component';
+import { LoremIpsum } from 'react-lorem-ipsum';
 import { Modal } from '../src/index';
 import {
   ModalBody,
@@ -155,7 +155,7 @@ const InsideScroll = () => {
           <ModalHeader>Modal Title</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Lorem size={5} />
+            <LoremIpsum />
           </ModalBody>
           <ModalFooter>
             <Button onClick={onClose}>Close</Button>
@@ -179,7 +179,7 @@ const AnimationDisabled = () => {
           <ModalHeader>Modal Title</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Lorem size={5} />
+            <LoremIpsum />
           </ModalBody>
           <ModalFooter>
             <Button onClick={onClose}>Close</Button>
@@ -203,7 +203,7 @@ const FullWithLongContent = () => {
           <ModalHeader>Modal Title2</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Lorem count={30} />
+            <LoremIpsum />
           </ModalBody>
           <ModalFooter>
             <Button onClick={onClose}>Close</Button>
